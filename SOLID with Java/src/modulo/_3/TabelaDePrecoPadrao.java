@@ -1,7 +1,8 @@
 package modulo._3;
 
-public class TabelaDePrecoPadrao {
+public class TabelaDePrecoPadrao implements TabelaDePreco {
 
+	@Override
 	public double descontoPara(double valor) {
 		if (valor > 5000)
 			return 0.03;
